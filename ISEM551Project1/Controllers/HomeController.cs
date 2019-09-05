@@ -34,6 +34,13 @@ namespace ISEM551Project1.Controllers
             return View();
         }
 
+        public IActionResult Team()
+        {
+            ViewData["Message"] = "Your team page.";
+
+            return View();
+        }
+
         [ResponseCache(Duration = 0, Location = ResponseCacheLocation.None, NoStore = true)]
         public IActionResult Error()
         {
